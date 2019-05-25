@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>WineHouse</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<!-- /header -->
+	<header>
+		<div class="top-nav">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-7">
+						<div class="header-contact">
+							<span><i class="fa fa-map-marker"></i>Tầng 6 - Tòa nhà Ladeco - 266 Đội Cấn, Hà Nội, Việt Nam</span>
+							<span><i class="fa fa-mobile"></i><a href="" title="">1800 6750</a></span>
+							<span><i class="fa fa-clock-o"></i>9h - 21h từ thứ 2 đến thứ 7</span>
+						</div>
+					</div>
+					<div class="col-lg-5">
+						<div class="header-action">
+							<div class="header-action-item">
+								<i class="fa fa-unlock-alt"></i>
+								<a href="register.html" title="">Đăng ký</a>
+							</div>
+							<div class="header-action-item">
+								<i class="fa fa-user"></i>
+								<a href="login.html" title="">Đăng nhập</a>
+							</div>
+							<div class="header-action-item search">
+								<span><i class="fa fa-search"></i></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<nav>
+			<div class="container">
+				<ul class="nav">
+					<li class="nav-item"><a href="index.html" title="">TRANG CHỦ</a></li>
+					<li class="nav-item"><a href="" title="">GIỚI THIỆU</a></li>
+					<li class="nav-item logo"><a href="" title=""><img src="images/logo.png" alt=""></a></li>
+					<li class="nav-item"><a href="products.html" title="">SẢN PHẨM <i class="fa fa-angle-right"></i></a>
+						<ul class="sub-menu">
+							<li class="nav-item-lv2"><a href="" title="">Rượu pha</a></li>
+							<li class="nav-item-lv2"><a href="" title="">Rượu ngoại</a></li>
+							<li class="nav-item-lv2"><a href="" title="">Rượu tri ân</a></li>
+							<li class="nav-item-lv2"><a href="" title="">Rượu Vodka</a></li>
+							<li class="nav-item-lv2"><a href="" title="">Giỏ quà biếu</a></li>
+							<li class="nav-item-lv2"><a href="" title="">Rượu vang nhập khẩu</a></li>
+							<li class="nav-item-lv2"><a href="" title="">Hàng sắp về</a></li>
+							<li class="nav-item-lv2"><a href="" title="">Hàng mới về</a></li>
+							<li class="nav-item-lv2"><a href="" title="">Sản phẩm bán chạy</a></li>
+							<li class="nav-item-lv2"><a href="" title="">Sản phẩm giá ưu đãi</a></li>
+						</ul>
+					</li>
+					<li class="nav-item"><a href="blogs.html" title="">TIN TỨC</a></li>
+				</ul>
+				<div class="shopping-card">
+					<div class="shopping-card-icon">
+						<a href="#" title="">
+							<i class="fa fa-shopping-bag"></i>
+						</a>
+						<span class="card-count">2</span>
+					</div>
+					<div class="shopping-card-content">
+						<div class="product-card-list">
+							<div class="product-card-item">
+								<a href="" title="" class="product-card-img fix-image">
+									<img src="images/product_card_01.jpg" alt="" class="">
+								</a>
+								<div class="product-card-item-detail">
+									<div class="product-card-name">
+										<a href="" title="">Rượu Revel</a>
+									</div>
+									<span class="product-card-price">600.000₫</span>
+									<div class="product-card-count">
+										<input type="text" name="" value="1" placeholder="" id="number">
+										<button type="button" class="increase-btn" id="increase" onclick="increaseValue()"><i class="fa fa-caret-up"></i></button>
+										<button type="button" class="reduce-btn" id="decrease" onclick="decreaseValue()"><i class="fa fa-caret-down"></i></button>
+									</div>
+								</div>
+								<a href="" title="" class="remove-icon"></a>
+							</div>
+							<div class="product-card-item">
+								<a href="" title="" class="product-card-img fix-image">
+									<img src="images/product_card_02.jpg" alt="">
+								</a>
+								<div class="product-card-item-detail">
+									<div class="product-card-name">
+										<a href="" title="">Rượu Mariana 2013</a>
+									</div>
+									<span class="product-card-price">300.000₫</span>
+									<div class="product-card-count">
+										<button type="button" class="increase-btn" id="increase" onclick="increaseValue()"><i class="fa fa-caret-up"></i></button>
+										<button type="button" class="reduce-btn" id="decrease" onclick="decreaseValue()"><i class="fa fa-caret-down"></i></button>
+										<input type="text" name="" value="1" placeholder="" id="number">
+									</div>
+								</div>
+								<a href="" title="" class="remove-icon"></a>
+							</div>
+						</div>
+						<div class="total">
+							Tổng cộng:
+							<span>900.000₫</span>
+						</div>
+						<div class="action">
+							<a href="" title="" class="main-button btn-card">Vào giỏi hàng</a>
+							<a href="" title="" class="main-button grey-button btn-checkout">Thanh toán</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- bread crumb -->
+	<section class="bread-crumb">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<ul class="breadcrumb">
+					    <li><a href="">Trang chủ</a><span class="br-line">|</span></li>
+					    <li><a href="">Tin tức</a><span class="br-line">|</span></li>
+					    <li>10 bí quyết giúp uống rượu để bảo vệ sức khỏe</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- brand -->
+	<section class="main-content-blog-detail container">
+		<div class="row">
+			<div class="col-lg-9">
+				<div class="blog-detail-main">
+					<div class="row">
+						<!-- content -->
+						<div class="col-lg-12">
+							<h1 class="blog-item-title blog-detail-title"><a href="">10 bí quyết giúp uống rượu để bảo vệ sức khỏe</a></h1>
+							<div class="post-time">
+								Đăng bởi <span class="author">Bizweb Theme</span> | 
+								<span class="time">30/10/2015</span> | 
+								<span class="comment">0 bình luận</span>
+							</div>
+							<div class="article-details">
+								<div class="article-image fix-image">
+									<a href=""><img src="images/detail_blog_01.jpg" alt=""></a>
+								</div>
+								<div class="article-content">
+									<div class="rte">
+										<p style="text-align: justify;"><span style="font-size:16px;"><strong>1. Ăn một ít thức ăn dầu mỡ trước khi uống rượu:&nbsp;</strong></span></p>
+
+										<p style="text-align: justify;"><span style="font-size:16px;">Trước khi uống rượu, hãy chủ động ăn trước một ít thức ăn nhiều dầu mỡ. Chúng sẽ tạo thành một lớp áo che kín mặt trong ruột, giảm sự thẩm thấu của rượu qua thành ruột vào máu. Nhờ đó bạn sẽ lâu bị say hơn.</span></p>
+
+										<p style="text-align: justify;"><span style="font-size:16px;"><strong>2. Ăn nhiều rau xanh và hoa quả:&nbsp;</strong></span></p>
+
+										<p style="text-align: justify;"><span style="font-size:16px;">Rau xanh, hoa quả, đậu nành rất giàu vitamin và chất chống oxi hóa, giúp bảo vệ gan và hạn chế tác hại<br />
+										của cồn trong rượu tới hoạt động của gan.</span></p>
+
+										<p style="text-align: justify;"><span style="font-size:16px;"><strong>3. Không uống rượu, bia khi đói:</strong>&nbsp;</span></p>
+
+										<p style="text-align: justify;"><span style="font-size:16px;">Nếu uống rượu, bia khi đói lượng axit<br />
+										trong dạ dày tăng lên, khi kết hợp với chất cồn trong rượu, bia sẽ làm bạn dễ say hơn, kèm theo đó là cảm giác nôn nao, khó chịu. Do đó, vừa ăn, vừa uống hay ăn một chút lót dạ trước khi uống rượu, bia là cách tốt nhất để đẩy lùi cơn say và giảm bớt tác hại của rượu, bia với<br />
+										sức khỏe cơ thể.</span></p>
+
+										<p style="text-align: center;"><span style="font-size:16px;"><img src="//bizweb.dktcdn.net/thumb/large/100/007/358/files/ruou7.jpg?v=1444810715024" /></span></p>
+
+										<p>&nbsp;</p>
+
+										<p style="text-align: justify;"><span style="font-size:16px;"><strong>4. Không uống các loại thuốc chống nôn:&nbsp;</strong></span></p>
+
+										<p style="text-align: justify;"><span style="font-size:16px;">Đừng cố uống các loại thuốc chống nôn vì chính loại thuốc đó sẽ tiếp tục giữ chất độc lại trong cơ thể bạn, mà gan lại không thể lọc chất độc kịp, hậu quả là gây tổn hại nghiêm trọng tới gan, lâu ngày gây xơ gan và ung thư gan.</span></p>
+
+										<p style="text-align: justify;"><span style="font-size:16px;"><strong>5. Nên uống nhiều nước khi uống rượu, bia:&nbsp;</strong></span></p>
+
+										<p style="text-align: justify;"><span style="font-size:16px;">Nên uống nước ngay sau khi uống rượu. Dù lượng nước nhiều hay ít thì việc này cũng giúp đẩy nhanh quá trình đào thải chất cồn ra khỏi cơ thể qua đường tiểu tiện, làm bạn không bị say khi<br />
+										uống rượu.</span></p>
+
+										<p style="text-align: justify;"><span style="font-size:16px;"><strong>6.Không uống nhiều loại rượu, bia cùng lúc:&nbsp;</strong></span></p>
+
+										<p style="text-align: justify;"><span style="font-size:16px;">Rượu thuốc, rượu vang, rượu trắng... bởi mỗi loại có thành phần khác nhau, khi uống lẫn lộn, sẽ dễ làm bạn say hơn.</span></p>
+
+										<p style="text-align: justify;"><span style="font-size:16px;"><strong>7. “Làm ấm” rượu trước khi uống:&nbsp;</strong></span></p>
+
+										<p style="text-align: justify;"><span style="font-size:16px;">Đối với các loại rượu, trước khi uống, hãy “làm ấm” chúng bằng cách ngâm vào nước nóng. Dưới tác động của nhiệt độ, một số chất có hại trong rượu sẽ bay hơi, từ đó giảm được những tác động xấu của rượu tới sức khỏe cơ thể.</span></p>
+
+										<p style="text-align: justify;"><span style="font-size:16px;"><strong>8. Không uống rượu, bia nhanh:&nbsp;</strong></span></p>
+
+										<p style="text-align: justify;"><span style="font-size:16px;">Uống rượu từ từ cũng là cách giảm cơn say của bạn vì 1 lượng cồn lớn bất ngờ “đổ bộ” vào cơ thể trong thời gian ngắn có thể gây tác động nhanh, mạnh tới não bộ, có thể dẫn tới choáng và nhanh say hơn.</span></p>
+
+										<p style="text-align: justify;"><span style="font-size:16px;"><strong>9. Không hút thuốc lá trong lúc uống rượu, bia:</strong>&nbsp;</span></p>
+
+										<p style="text-align: justify;"><span style="font-size:16px;">Bởi nếu như thế sẽ làm tăng nguy cơ ung thư thực quản và vòm họng.</span></p>
+
+										<p style="text-align: justify;">&nbsp;</p>
+
+										<p style="text-align: center;"><span style="font-size:16px;"><img src="//bizweb.dktcdn.net/thumb/large/100/007/358/files/tintuc2.jpg?v=1444810806362" /></span></p>
+
+										<p style="text-align: center;">&nbsp;</p>
+
+										<p style="text-align: justify;"><span style="font-size:16px;"><strong>10. Không tắm ngay sau khi uống rượu, bia</strong>:&nbsp;</span></p>
+
+										<p style="text-align: justify;"><span style="font-size:16px;">Vì nếu không sẽ làm tiêu hao một lượng lớn đường glucose có trong cơ thể, từ đó làm giảm lượng đường trong máu, dẫn tới hạ đường huyết đột ngột, giảm thân nhiệt có thể gây đột quỵ, trụy tim mạch.</span></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- share -->
+						<div class="col-lg-12">
+							<div class="tag-share">
+								<span>Chia sẻ</span>
+								<a href=""><i class="fa fa-facebook-official"></i></a>
+								<a href=""><i class="fa fa-twitter"></i></a>
+								<a href=""><i class="fa fa-pinterest"></i></a>
+								<a href=""><i class="fa fa-google-plus"></i></a>
+							</div>
+						</div>
+						<div class="col-lg-12">
+							<div class="article-comment">
+								<h5 class="title-coment">BÌNH LUẬN:</h5>
+								<div class="article-comment-item">
+									<div class="user-image-comment fix-image">
+										<img src="images/avartar.png" alt="">
+									</div>
+									<div class="comment-content">
+										<p class="user-name-comment">Nguyễn Trần Diễm Thị Trà My</p>
+										<p class="comment-content">Bài viết rất hữu ích</p>
+										<span class="comment-date">09/03/2017</span>
+									</div>
+								</div>
+								<div class="article-comment-item">
+									<div class="user-image-comment fix-image">
+										<img src="images/avartar.png" alt="">
+									</div>
+									<div class="comment-content">
+										<p class="user-name-comment">Nguyễn Trần Diễm Thị Trà My</p>
+										<p class="comment-content">Bài viết rất hữu ích</p>
+										<span class="comment-date">09/03/2017</span>
+									</div>
+								</div>
+								<form action="" method="" class="comment-form">
+									<div class="row">
+										<div class="col-lg-12">
+											<h5 class="title-coment title-coment-form">VIẾT BÌNH LUẬN CỦA BẠN:</h5>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-6">
+											<input type="text" name="" placeholder="Họ tên*" class="form-control">
+										</div>
+										<div class="col-lg-6">
+											<input type="text" name="" placeholder="Email*" class="form-control">
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-12">
+											<textarea placeholder="Nội dung*" class="form-control" rows="6"></textarea>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-12 comment-submit-btn">
+											<input type="submit" value="Gửi bình luận" class="main-button">
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3">
+				<aside class="left-content-product left-content-2">
+					<div class="aside-category aside-category-item">
+						<div class="aside-title aside-title-2">
+							<h2>DANH MỤC BÀi VIẾT</h2>
+						</div>
+						<div class="aside-content aside-content-blog">
+							<ul>
+								<li><a href="index.html" title="">Trang chủ</a></li>
+								<li><a href="#" title="">Giới thiệu</a></li>
+								<li class="aside-item-dropdown">
+									<a href="products.html" title="">Sản phẩm</a><i class="fa fa-angle-down" id="asideDropdownIcon"></i>
+									<ul class="sub-menu sub-menu-aside">
+										<li class="nav-item-lv2"><a href="" title="">Rượu pha</a></li>
+										<li class="nav-item-lv2"><a href="" title="">Rượu ngoại</a></li>
+										<li class="nav-item-lv2"><a href="" title="">Rượu tri ân</a></li>
+										<li class="nav-item-lv2"><a href="" title="">Rượu Vodka</a></li>
+										<li class="nav-item-lv2"><a href="" title="">Giỏ quà biếu</a></li>
+										<li class="nav-item-lv2"><a href="" title="">Rượu vang nhập khẩu</a></li>
+										<li class="nav-item-lv2"><a href="" title="">Hàng sắp về</a></li>
+										<li class="nav-item-lv2"><a href="" title="">Hàng mới về</a></li>
+										<li class="nav-item-lv2"><a href="" title="">Sản phẩm bán chạy</a></li>
+										<li class="nav-item-lv2"><a href="" title="">Sản phẩm giá ưu đãi</a></li>
+									</ul>
+								</li>
+								<li><a href="blogs.html" title="">Tin tức</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="aside-category aside-category-item">
+						<div class="aside-title aside-title-2">
+							<h2>BÀI VIẾT LIÊN QUAN</h2>
+						</div>
+						<div class="aside-content">
+							<div class="blog-list-aside">
+								<div class="blog-item-aside">
+									<div class="blog-item-aside-thumb">
+										<a href=""><img src="images/mini_blog_01.jpg" alt=""></a>
+									</div>
+									<h3><a href="">Whiskey là vàng ngọc và lục bảo</a></h3>
+								</div>
+								<div class="blog-item-aside">
+									<div class="blog-item-aside-thumb">
+										<a href=""><img src="images/mini_blog_01.jpg" alt=""></a>
+									</div>
+									<h3><a href="">Whiskey là vàng ngọc và lục bảo</a></h3>
+								</div>
+								<div class="blog-item-aside">
+									<div class="blog-item-aside-thumb">
+										<a href=""><img src="images/mini_blog_01.jpg" alt=""></a>
+									</div>
+									<h3><a href="">Whiskey là vàng ngọc và lục bảo</a></h3>
+								</div>
+								<div class="blog-item-aside">
+									<div class="blog-item-aside-thumb">
+										<a href=""><img src="images/mini_blog_01.jpg" alt=""></a>
+									</div>
+									<h3><a href="">Whiskey là vàng ngọc và lục bảo</a></h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</aside>
+			</div>
+		</div>
+	</section>
+	<section class="brand-main">
+		<div class="container">
+			<div class="owl-carousel owl-theme" id="owl-brand">
+			  	<div class="slide-item">
+			  		<img src="images/brand1.jpg" alt="">
+			  	</div>
+			  	<div class="slide-item">
+			  		<img src="images/brand2.jpg" alt="">
+			  	</div>
+			  	<div class="slide-item">
+			  		<img src="images/brand3.jpg" alt="">
+			  	</div>
+			  	<div class="slide-item">
+			  		<img src="images/brand4.jpg" alt="">
+			  	</div>
+			  	<div class="slide-item">
+			  		<img src="images/brand5.jpg" alt="">
+			  	</div>
+			  	<div class="slide-item">
+			  		<img src="images/brand6.jpg" alt="">
+			  	</div>
+			  	<div class="slide-item">
+			  		<img src="images/brand7.jpg" alt="">
+			  	</div>
+			  	<div class="slide-item">
+			  		<img src="images/brand8.jpg" alt="">
+			  	</div>
+			  	<div class="slide-item">
+			  		<img src="images/brand9.jpg" alt="">
+			  	</div>
+			  	<div class="slide-item">
+			  		<img src="images/brand10.jpg" alt="">
+			  	</div>
+			</div>
+		</div>
+	</section>
+	<!-- footer -->
+	<footer>
+		<div class="footer-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8">
+						<div class="subcribe-area">
+							<h5>GỬI EMAIL</h5>
+							<form action="" method="" class="subcribe-form">
+								<input type="email" name="" value="" placeholder="Email của bạn">
+								<button type="">GỬI NGAY</button>
+							</form>
+						</div>
+						
+					</div>
+					<div class="col-lg-4">
+						<div class="subcribe-social">
+							<h5>THEO DÕI CHÚNG TÔI</h5>
+							<ul class="social-icons">
+								<li><a href="" title=""><i class="fa fa-twitter"></i></a></li>
+								<li><a href="" title=""><i class="fa fa-facebook-f"></i></a></li>
+								<li><a href="" title=""><i class="fa fa-pinterest"></i></a></li>
+								<li><a href="" title=""><i class="fa fa-google-plus"></i></a></li>
+								<li><a href="" title=""><i class="fa fa-instagram"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-main">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-2">
+						<div class="footer-widget">
+							<h4>THÔNG TIN</h4>
+							<ul class="footer-menu-page">
+								<li><i class="fa fa-caret-right"></i><a href="" title=""> Trang chủ</a></li>
+								<li><i class="fa fa-caret-right"></i><a href="" title=""> Giới thiệu</a></li>
+								<li><i class="fa fa-caret-right"></i><a href="" title=""> Sản phẩm</a></li>
+								<li><i class="fa fa-caret-right"></i><a href="" title=""> Tin tức</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="footer-widget">
+							<h4>CÁC BÀI VIẾT ĐÃ ĐĂNG</h4>
+							<ul class="footer-list-blogs">
+								<li><a href="" title="">Whiskey là vàng ngọc và lục bảo</a></li>
+								<li><a href="" title="">10 bí quyết giúp uống rượu để bảo vệ sức khỏe</a></li>
+								<li><a href="" title="">Vòng đời của sản phẩm rượu vang</a></li>
+								<li><a href="" title="">21 công dụng bất ngờ của Vodka</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="footer-widget">
+							<h4>LIÊN HỆ</h4>
+							<ul class="footer-list-contact">
+								<li><i class="fa fa-map-marker"></i> Tầng 6 - Tòa nhà Ladeco - 266 Đội Cấn, Hà Nội, Việt Nam</li>
+								<li><i class="fa fa-envelope-o"></i><a href="#" title=""> support@sapo.vn</a></li>
+								<li><i class="block_icon fa fa-phone"></i><a href="" title=""> 18006750</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8">
+						<span>© Bản quyền thuộc về <b>Awesome Team</b> | Cung cấp bởi <a href="" title="">Sapo</a></span>
+					</div>
+					<div class="col-lg-4">
+						<div class="copyright-payment">
+							<img src="images/payment.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="back-to-top" id="back-to-top"><i class="fa fa-arrow-circle-up"></i></div>
+		</div>
+	</footer>
+	<script src="js/jquery.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/carousel.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
