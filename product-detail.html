@@ -9,6 +9,7 @@
 	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
 	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 </head>
@@ -178,7 +179,190 @@
 			</div>
 		</div>
 	</section>
-	<!-- main content product -->
+	<!-- main product detail-->
+	<section class="product-detail">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-7">
+					<div class="product-detail-slide">
+						<div class="swiper-container gallery-thumbs">
+						    <div class="swiper-wrapper">
+								<div class="swiper-slide product-detail-thumbnail-wrap">
+									<a href="javascript: void(0)">
+										<img src="images/product_detail_01.jpg" alt="" class="product-detail-thumbnail">
+									</a>
+								</div>
+								<div class="swiper-slide product-detail-thumbnail-wrap">
+									<a href="javascript: void(0)">
+										<img src="images/product_detail_02.jpg" alt="" class="product-detail-thumbnail">
+									</a>
+								</div>
+								<div class="swiper-slide product-detail-thumbnail-wrap">
+									<a href="javascript: void(0)">
+										<img src="images/product_detail_03.jpg" alt="" class="product-detail-thumbnail">
+									</a>
+								</div>
+						    </div>
+						</div>
+						<div class="swiper-button-next"><i class="fa fa-arrow-up"></i></div>
+    					<div class="swiper-button-prev"><i class="fa fa-arrow-down"></i></div>
+						<div class="product-detail-image show" href="images/product_detail_01.jpg" id="productImageWrap">
+							<img src="images/product_detail_01.jpg" alt="" id="productImage">
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-5">
+					<div class="product-detail-info">
+						<div class="box-heading">
+							<h1>RƯỢU WINE CHEESE</h1>
+						</div>
+						<div class="product-price product-detail-price">
+					  		<span class="current-price">980.000₫</span>
+					  	</div>
+					  	<div class="product-reiview">
+				  			<div class="product-rate-star">
+				  				<i class="fa fa-star" aria-hidden="true"></i>
+				  				<i class="fa fa-star" aria-hidden="true"></i>
+				  				<i class="fa fa-star" aria-hidden="true"></i>
+				  				<i class="fa fa-star-o" aria-hidden="true"></i>
+				  				<i class="fa fa-star-o" aria-hidden="true"></i>
+				  			</div>
+				  			<span class="product-reiview-count">1</span>
+				  			<div class="product-reiview-user">
+				  				<i class="fa fa-user" aria-hidden="true"></i>
+				  			</div>
+				  			<span class="line">|</span>
+				  			<a href="#tab3" class="review-now">Viết nhận xét</a>
+					  	</div>
+					  	<form class="form-detail-action">
+					  		<label>SỐ LƯỢNG:</label>
+					  		<div class="form-detail-action-content">
+						  		<div class="product-number">
+						  			<button class="btn-up" onclick="
+										var result = document.getElementById('pro01');
+										var pro01 = result.value;
+										if( !isNaN(pro01)){
+											result.value++;
+										}
+										return false;
+
+									"><i class="fa fa-caret-up"></i></button>
+							  		<input type="text" value="1" id="pro01">
+							  		<button class="btn-down" onclick="
+										var result = document.getElementById('pro01');
+										var pro01 = result.value;
+										if( !isNaN(pro01) && pro01>1){
+											result.value--;
+										}
+										return false;
+									"><i class="fa fa-caret-down"></i></button>
+						  		</div>
+							  	<button class="main-button detail-submit-button" type="submit">Mua hàng</button>
+						  	</div>
+					  	</form>
+					  	<div class="product-detail-discreption">
+					  		<label>Mô tả:</label>
+					  		<div class="discreption-area">
+								 Ý nghĩa và mục đích tặng quà chẳng phải bao giờ và ở nơi nào cũng giống nhau. Có những món quà chỉ thuần túy mang ý nghĩa tinh thần. Có những món quà khiến ta vui sướng, có...
+					  		</div>
+					  	</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12 col-12 product-tab">
+					<ul class="nav nav-tabs" role="tablist">
+					    <li class="nav-item">
+					    	<a class="nav-link active" data-toggle="tab" href="#tab1">Mô tả</a>
+					    </li>
+					    <li class="nav-item">
+					    	<a class="nav-link" data-toggle="tab" href="#tab2">Tab tùy chỉnh</a>
+					    </li>
+					    <li class="nav-item">
+					    	<a class="nav-link" data-toggle="tab" href="#tab3">Đánh giá(APP)</a>
+					    </li>
+				  	</ul>
+
+				  <!-- Tab panes -->
+					<div class="tab-content">
+						<div id="tab1" class="container tab-content-area tab-pane active">
+							Mô tả viết ở đây
+						</div>
+						<div id="tab2" class="container tab-content-area tab-pane fade"><br>
+							Các nội dung Hướng dẫn mua hàng viết ở đây
+						</div>
+						<div id="tab3" class="container tab-content-area tab-pane fade"><br>
+							<div class="bizweb-product-review">
+								<div class="bizweb-product-review-title">
+									<h4>Đánh giá sản phẩm</h4>
+								</div>
+								<div class="bizweb-product-review-content">
+									<div class="bizweb-product-review-summary">
+										<div class="bizweb-product-review-summary-info">
+											<span class="product-review-average">3.0</span>
+											<div class="product-review-average-detail">
+												<div class="bizweb-product-review-star">
+													<i class="fa fa-star" aria-hidden="true"></i>
+									  				<i class="fa fa-star" aria-hidden="true"></i>
+									  				<i class="fa fa-star" aria-hidden="true"></i>
+									  				<i class="fa fa-star-o" aria-hidden="true"></i>
+									  				<i class="fa fa-star-o" aria-hidden="true"></i>
+												</div>
+												<div class="bizweb-product-review-user">
+													<span>1</span>
+													<span><i class="fa fa-user" aria-hidden="true"></i></span>
+												</div>
+											</div>
+										</div>
+										<div class="bizweb-product-review-summary-action">
+											<button data-toggle="modal" data-target="#reviewModal">
+												Viết đánh giá
+											</button>
+										</div>
+									</div>
+									<div class="list-product-review">
+										<div class="bizweb-review-item">
+											<div class="bizweb-review-item-header">
+												<div class="review-item-user-avatar">
+													<i class="fa fa-user-circle-o" aria-hidden="true"></i>
+												</div>
+												<div class="review-item-detail">
+													<div class="review-item-user-name">
+														<span>Nguyen Van A</span>
+													</div>
+													<div class="review-star-time">
+														<div class="bizweb-product-review-star product-review-star-detail">
+															<i class="fa fa-star" aria-hidden="true"></i>
+											  				<i class="fa fa-star" aria-hidden="true"></i>
+											  				<i class="fa fa-star" aria-hidden="true"></i>
+											  				<i class="fa fa-star-o" aria-hidden="true"></i>
+											  				<i class="fa fa-star-o" aria-hidden="true"></i>
+														</div>
+														<span class="review-time">05/01/2018</span>
+													</div>
+												</div>
+											</div>
+											<div class="bizweb-review-item-body">
+												<div class="bizweb-review-item-title">
+													<p>Sản phẩm tốt</p>
+												</div>
+												<div class="bizweb-review-item-content">
+													<p>Sản phẩm rất tốt và giá cả hợp lý</p>
+												</div>
+											</div>
+											<span class="bizweb-review-reportreview" onclick="confirm('Bạn có chắc chắn muốn báo cáo đánh giá này là một sai phạm?')">
+												<i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 	<!-- brand -->
 	<section class="brand-main">
 		<div class="container">
@@ -299,12 +483,58 @@
 			<div class="back-to-top" id="back-to-top"><i class="fa fa-arrow-circle-up"></i></div>
 		</div>
 	</footer>
+	<!-- review form modal -->
+	<div class="modal fade review-modal" id="reviewModal">
+		<div class="modal-dialog">
+		  	<div class="modal-content">
+			    <form class="review-modal-form">
+			    	<h4 class="review-modal-form-title">Đánh giá sản phẩm</h4>
+			    	<div class="bizweb-product-review-star form-reivew-star">
+						<i class="fa fa-star-o your-rate-icon" aria-hidden="true" data-value="1"></i>
+		  				<i class="fa fa-star-o your-rate-icon" aria-hidden="true" data-value="2"></i>
+		  				<i class="fa fa-star-o your-rate-icon" aria-hidden="true" data-value="3"></i>
+		  				<i class="fa fa-star-o your-rate-icon" aria-hidden="true" data-value="4"></i>
+		  				<i class="fa fa-star-o your-rate-icon" aria-hidden="true" data-value="5"></i>
+					</div>
+			    	<div class="form-group">
+			    		<input type="text" placeholder="Nhập tên của bạn" class="form-control">
+			    	</div>
+			    	<div class="form-group">
+			    		<input type="text" placeholder="nguyenvan@gmail.com" class="form-control">
+			    	</div>
+			    	<div class="form-group">
+			    		<input type="text" placeholder="Tiêu đề" class="form-control">
+			    	</div>
+			    	<div class="form-group">
+			    		<textarea class="form-control" placeholder="Nội dung" rows="5"></textarea>
+			    	</div>
+			    	<div class="form-group submit-form">
+			    		<input type="submit" value="Gửi">
+			    	</div>
+			    </form>
+		  	</div>
+		</div>
+	</div>
 	<script src="js/jquery.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/carousel.js"></script>
 	<script src="js/nav.mobile.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/zoom-image.js"></script>
 	<script src="js/main.js"></script>
+	<script>
+	    var galleryThumbs = new Swiper('.gallery-thumbs', {
+			slidesPerView: 3,
+			direction: 'vertical',
+			setWrapperSize: true,
+			width: 100,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+	    });
+  	</script>
 </body>
 </html>

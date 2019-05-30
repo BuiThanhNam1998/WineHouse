@@ -34,6 +34,45 @@ $('#searchFormButton').click(function(){
 	}
 });
 // aside dropdown
- $("#asideDropdownIcon").click(function(){
+$("#asideDropdownIcon").click(function(){
     $("#asideDropdown").slideToggle();
-  });	
+});
+// product detail carousel
+$(".product-detail-thumbnail").click(function(){
+	var url = $(this).attr('src');
+	$("#productImage").attr('src',url);
+	$("#big-img").attr('src',url);
+	$("#productImageWrap").attr('href',url);
+});
+$('.show').zoomImage();
+//
+$(".your-rate-icon").click(function(){
+    value = $(this).data("value");
+    console.log(value);
+    $("#your-rate").val(value);
+    for (var i = 1; i <= value; i++) {
+        star = $("i[data-value='" + i + "']"); 
+        star.addClass("fa-star");
+        star.removeClass("fa-star-o");
+    }
+    for (var i = 5; i > value; i--) {
+        star = $("i[data-value='" + i + "']"); 
+        star.addClass("fa-star-o");
+        star.removeClass("fa-star");
+    }
+});
+//
+$(".your-rate-icon").hover(function(){
+    value = $(this).data("value");
+    console.log(value);
+    for (var i = 1; i <= value; i++) {
+        star = $("i[data-value='" + i + "']"); 
+        star.addClass("fa-star");
+        star.removeClass("fa-star-o");
+    }
+    for (var i = 5; i > value; i--) {
+        star = $("i[data-value='" + i + "']"); 
+        star.addClass("fa-star-o");
+        star.removeClass("fa-star");
+    }
+});
